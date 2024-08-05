@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}
+{%if form.instance.pk  %}
+Edit Blog
+{% else %}
+Create Blog
+{% endif %}
+{% endblock %}
+
+{% block content %}
+
+<h1 class="mt-4" > Welcome to Blogging Website </h1>
+
+<h5>
+  {%if form.instance.pk  %}
+  Edit Blog
+  {% else %}
+  Create Blog
+  {% endif %}
+  <form method="post" enctype="multipart/form-data" class="form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-warning" type="submit">Submit</button>
+  </form>
+  <a href="{% url 'blog_list' %}">Back</a>
+</h5>
+
+{% endblock content %}

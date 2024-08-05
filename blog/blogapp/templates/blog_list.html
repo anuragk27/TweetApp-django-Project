@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Blog | Home
+{% endblock %}
+
+{% block content %}
+
+<h1 class="mt-4" > Welcome to Blogging Website </h1>
+
+<a class="btn btn-primary " href="{% url 'blog_create' %}">Create Blog</a>
+<div class="container row gap-2">
+  {% for blog in blogs %}
+  <div class="card mt-2" style="width: 13rem;">
+    <img src="{{blog.photo.url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{blog.user.username}}</h5>
+      <p class="card-text">{{blog.text}}</p>
+
+      {% if blog.user == user  %}
+        <a href="{% url 'blog_edit' blog.id %}" class="btn btn-primary">Edit</a>
+      <a href="{% url 'blog_delete' blog.id %}" class="btn btn-danger">Delete</a>
+      {% endif %}
+      
+
+    </div>
+  </div>
+  {% endfor %}
+  
+
+</div>
+
+{% endblock content %}
