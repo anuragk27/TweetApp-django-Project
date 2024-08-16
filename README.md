@@ -1,0 +1,14 @@
+# DJANGO BLOG WEBSITE WITH CRUD FUNCTIONALITY
+
+![home](https://github.com/user-attachments/assets/9c60f342-caba-4fc5-976d-934dbb2fff09)
+
+
+![register](https://github.com/user-attachments/assets/342e3f9e-4f06-45aa-95a3-0a4c6a549ce7)
+
+
+![login](https://github.com/user-attachments/assets/8c441a43-34ae-441d-8ee7-3c2258b67782)
+
+
+![edit](https://github.com/user-attachments/assets/582778e2-0d36-413c-a0d4-f903546e2678)
+
+![delete](https://github.com/user-attachments/assets/5f595d5c-c521-454f-811c-6ac120500f49)
