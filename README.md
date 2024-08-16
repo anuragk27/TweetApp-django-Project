@@ -12,3 +12,10 @@
 ![edit](https://github.com/user-attachments/assets/582778e2-0d36-413c-a0d4-f903546e2678)
 
 ![delete](https://github.com/user-attachments/assets/5f595d5c-c521-454f-811c-6ac120500f49)
+
+*SEARCH FUNCTIONALITY
+![SearchbyName](https://github.com/user-attachments/assets/5528c06f-2761-43ae-890a-74aca783d9a7)
+
+![SearchByText](https://github.com/user-attachments/assets/5f08c096-9d40-40f7-be78-d587c2039615)
+
+![NoResultsFound](https://github.com/user-attachments/assets/71fe47be-42da-4085-a651-550d8f0afab9)
