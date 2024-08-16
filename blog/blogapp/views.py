@@ -1,9 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render , HttpResponse
 from .models import Blog 
 from .forms import BlogForm , UserRegistrationForm
 from django.shortcuts import get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login
+from django.db.models import Q
 # Create your views here.
 
 # Blog List
@@ -63,3 +64,13 @@ def register(request):
         form = UserRegistrationForm()
 
     return render(request,'registration/register.html',{'form':form})
+
+#Search
+def search(request):
+    query = request.GET['query']
+    if query:
+        allposts = Blog.objects.filter(Q(text__icontains=query) | Q(user__username__icontains=query))
+    else:
+        allposts = []
+    return render(request,'search.html', {'allposts': allposts})
+    # return HttpResponse('This is search')
