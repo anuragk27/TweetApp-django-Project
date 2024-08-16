@@ -21,9 +21,14 @@
 
 ![NoResultsFound](https://github.com/user-attachments/assets/71fe47be-42da-4085-a651-550d8f0afab9)
 
-**HOW TO START THE PROJECT**
+# HOW TO START THE PROJECT
+
 1.CREATE A VIRTUAL ENVIRONMENT WHERE THE BLOG AND README FOLDER IS AVAILABLE USING virtualenv envname COMMAND
+
 2.ACTIVATE THE VIRTUAL ENVIRONMENT USING env/Scripts/activate COMMAND
+
 3.INSTALL REQUIREMENTS pip install -r requirements.txt
+
 4.CHANGE DIRECTORY TO BLOG USING cd blog COMMAND
+
 5.RUN THE PROJECT USING python manage.py runserver
