@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block title %}
-  Blog | Home
+  Tweet | Home
 {% endblock %}
 
 {% block content %}
 
-<h1 class="mt-4" > Welcome to Blogging Website </h1>
+<h1 class="mt-4" > Welcome to TweetApp </h1>
 
-<a class="btn btn-primary " href="{% url 'blog_create' %}">Create Blog</a>
+<a class="btn btn-primary " href="{% url 'blog_create' %}">Create Tweet</a>
 <div class="container row gap-2">
   {% for blog in blogs %}
   <div class="card mt-2" style="width: 13rem;">

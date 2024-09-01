@@ -2,21 +2,21 @@
 
 {% block title %}
 {%if form.instance.pk  %}
-Edit Blog
+Edit Tweet
 {% else %}
-Create Blog
+Create Tweet
 {% endif %}
 {% endblock %}
 
 {% block content %}
 
-<h1 class="mt-4" > Welcome to Blogging Website </h1>
+<h1 class="mt-4" > Welcome to TweetApp </h1>
 
 <h5>
   {%if form.instance.pk  %}
-  Edit Blog
+  Edit Tweet
   {% else %}
-  Create Blog
+  Create Tweet
   {% endif %}
   <form method="post" enctype="multipart/form-data" class="form">
     {% csrf_token %}
