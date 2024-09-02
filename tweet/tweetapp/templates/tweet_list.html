@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Tweet | Home
+{% endblock %}
+
+{% block content %}
+
+<h1 class="mt-4" > Welcome to TweetApp </h1>
+
+<a class="btn btn-primary " href="{% url 'tweet_create' %}">Create Tweet</a>
+<div class="container row gap-2">
+  {% for tweets in tweets %}
+  <div class="card mt-2" style="width: 13rem;">
+  {% if tweets.photo %}
+      <img src="{{tweets.photo.url}}" class="card-img-top" alt="...">
+    {% else %}
+      <p>No photo available.</p>
+    {% endif %}
+
+    <div class="card-body">
+      <h5 class="card-title">{{tweets.user.username}}</h5>
+      <p class="card-text">{{tweets.text}}</p>
+
+      {% if tweets.user == user  %}
+        <a href="{% url 'tweet_edit' tweets.id %}" class="btn btn-primary">Edit</a>
+      <a href="{% url 'tweet_delete' tweets.id %}" class="btn btn-danger">Delete</a>
+      {% endif %}
+      
+
+    </div>
+  </div>
+  {% endfor %}
+  
+
+</div>
+
+{% endblock content %}
