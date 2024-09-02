@@ -4,8 +4,6 @@
 
 Django Web App with **CRUD** functionality .
 
-# Data Structures and Algorithms added
-
 # Screenshots
 
 **HOME**
