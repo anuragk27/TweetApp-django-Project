@@ -61,7 +61,6 @@ Django Web App with **CRUD** functionality .
 
 5.Search Tweets.
 
-# Acknowledgement:
 
 # How to Run:
 1. Clone the Repo
